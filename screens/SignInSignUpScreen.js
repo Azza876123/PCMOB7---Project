@@ -11,6 +11,8 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
 
 export default function SignInSignUpScreen({ navigation }) {
 
+  
+
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
@@ -21,6 +23,8 @@ export default function SignInSignUpScreen({ navigation }) {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const dispatch = useDispatch();
+
+  <Text style={styles}> {"No account? Sign up now."}</Text>
 
   async function login() {
     console.log("---- Login time ----");
@@ -75,6 +79,7 @@ export default function SignInSignUpScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}> Organiser King </Text>
       <Text style={styles.title}>
         {isLogIn ? "Log In" : "Sign Up"}
       </Text>
