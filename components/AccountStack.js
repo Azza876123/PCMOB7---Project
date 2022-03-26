@@ -15,7 +15,7 @@ export default function AccountStack() {
   return (
   <Stack.Navigator>
     <Stack.Screen component={AccountScreen} name="Account" options={{
-        title: "Your Account",
+        title: "Your Profile",
         headerStyle: styles.header,
         headerTitleStyle: styles.headerTitle,
         headerLeft: null
